@@ -2,7 +2,7 @@
 
 What goes wrong when an NFT that owns an ERC-6551 account is sold, who has said so in public, and how ERC-6551P
 answers each point. ERC-6551P is a **proposed extension of ERC-6551: a draft, not an accepted standard** (an ERC
-number comes from the EIP editors). The reference implementation is not audited and not deployed.
+number comes from the EIP editors). The reference implementation is not audited; its first deployment is in the README's Deployments.
 
 Every source below was opened on 2026-10-29 or 2026-10-30, as its row says (the page itself, its raw markdown, the forum's JSON API, or the cloned
 repository); quotes are copied from that text. Forum posts are cited by number:

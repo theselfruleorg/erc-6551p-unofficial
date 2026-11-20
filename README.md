@@ -5,7 +5,8 @@ sale the buyer gets exactly what they checked, or the sale does not happen. Ther
 
 This repository holds the draft proposal, the contracts, the tests and the docs. Any ERC-721 collection can use it.
 
-> **Status: a draft, experimental, NOT audited, NOT deployed.**
+> **Status: a draft, experimental, NOT audited. First deployed on Robinhood Chain (4663) on 2026-11-13 for the POLYROB
+> collection ([Deployments](#deployments)).**
 > "ERC-6551P" is an unofficial working name. It is not an ERC number, not an accepted standard and not an official version of
 > ERC-6551. Nobody from the EIP editors or the ERC-6551 authors has reviewed or endorsed it. No outside firm has audited
 > this code ([`AUDIT.md`](AUDIT.md)). Value held in a deployment of this code can be lost.
@@ -260,11 +261,26 @@ review has read yet.
 
 ## Disclosure
 
-The authors plan the first deployment of this code for their own NFT collection, POLYROB, on Robinhood Chain (4663),
+The authors deployed this code first for their own NFT collection, POLYROB, on Robinhood Chain (4663) on 2026-11-13,
 and they have a commercial interest in it. That deployment uses this code with no change except names: the contract names, the EIP-712
 domain name of the market, the zone's metadata name and the keys of its internal storage slots. Its own collection and sale contracts are not in this repository.
 
-An outside audit is planned, and it will not be complete before that first deployment. So that deployment is experimental.
+An outside audit is planned; it was not complete before that first deployment. So that deployment is experimental.
+
+## Deployments
+
+| Chain | Contract | Address | Runtime sha256 |
+|---|---|---|---|
+| Robinhood Chain (4663) | account implementation | `0x31383600ad258BCC6aBbd989aF33537533a63289` | `0xe11fcade790377c57e91b0e1110ceb7cc5d938a89266d7ef5c2a599bc12db5c1` |
+| Robinhood Chain (4663) | market | `0x3Eb752684Ffb3ce0900cc047E542674cD84D925D` | `0x04be88dcc2eece454a20e992e6465411d7680a51ab8355b806a656437b693808` |
+| Robinhood Chain (4663) | Seaport zone | `0x9f01B9a17795c3CdAD669217304DC702819bc192` | `0x044dfc62c278f7673391abec171b8f31dedc0d606d0233e69127e5bdfab0867f` |
+| Robinhood Chain (4663) | POLYROB collection (not in this repository) | `0xE0CfDD0f7ec8BbA180E7cDEa93E521DDcba4f63a` | `0xcd3b40172e20620730a41f73eefd69e397cc94066dc20af19612a92a1cd56d2e` |
+| Robinhood Chain (4663) | POLYROB sale (not in this repository) | `0x3d6CE01DE2aAd5e038D55241CC43A0C4C8170694` | `0x31faecbe2380d46f7eecbe9a9133dca002ab7a60016adc7e2311e4acb56ad815` |
+
+Deployed in one transaction (`0x46fda144ab654fe349f0bbb25fa1bce7f6c6bb1350b7c91bc00c0805c15f6650`, block 113,386,056)
+through the CREATE2 deployer `0x4e59b44847b379578588920cA78FbF26c0B4956C`. Each contract's source is verified on
+Sourcify. The accounts are made by the standard ERC-6551 registry `0x000000006551c19487814612e58FE06813775758`
+with salt 0. The collection's site: https://6551.polyrob.dev.
 
 ## Plan
 
@@ -272,7 +288,8 @@ An outside audit is planned, and it will not be complete before that first deplo
 2. Collect technical feedback, and change the draft where it is wrong.
 3. Run the rehearsal on Robinhood Chain testnet (46630), and publish the result.
 4. Outside audit: publish the report and the status of each finding.
-5. First deployment on Robinhood Chain (4663): publish the addresses and the code hashes.
+5. First deployment on Robinhood Chain (4663): publish the addresses and the code hashes. Done 2026-11-13
+   ([Deployments](#deployments)), before step 4: the deployment is experimental.
 6. Open a pull request on `ethereum/ERCs` to ask for a number.
 
 ## Security

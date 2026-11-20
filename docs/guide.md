@@ -2,7 +2,7 @@
 
 ERC-6551P is a **proposed extension of ERC-6551: a draft, not an accepted standard** ("ERC-6551P" is a working name;
 an ERC number comes from the EIP editors). The reference implementation in this repository is built and tested,
-**not audited, not deployed**.
+**not audited**; its first deployment (Robinhood Chain 4663) is in the README's Deployments.
 
 This guide goes from simple to exact. The exact text is the draft (`erc-6551p.md`). Where this guide and the draft
 differ, the draft wins. Names in `code` are the names in the code (`reference.md` lists them all).

@@ -4,7 +4,7 @@
 
 Every selector, event topic and error selector on this page comes from the compiler (`forge inspect <Contract>
 methodIdentifiers | events | errors --json`, run in the Foundry root). ERC-6551P is a **draft**, not an accepted
-standard; the reference implementation is not audited and not deployed. The proposal's names: `erc-6551p.md`,
+standard; the reference implementation is not audited; its first deployment is in the README's Deployments. The proposal's names: `erc-6551p.md`,
 Reference Implementation.
 
 Generated with `forge Version: 1.3.5-stable`. Re-run: `python3 scripts/gen_erc6551p_reference.py`; `--check` fails when this page is old.

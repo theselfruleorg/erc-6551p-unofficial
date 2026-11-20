@@ -1,9 +1,8 @@
 # ERC-6551P — integration
 
 ERC-6551P is a **draft** extension of ERC-6551, not an accepted standard;
-the reference implementation is **not audited, not deployed**. Nothing on this page is live: no
-address of the account implementation, the market or the zone exists on any chain yet. Until a deployment is
-announced, every address below is a placeholder.
+the reference implementation is **not audited**. Its first deployment (Robinhood Chain 4663, 2026-11-13) is listed
+in the README's [Deployments](../README.md#deployments); every address below is a placeholder.
 
 Three audiences: a **collection** that adopts the kit (§1), a **marketplace or wallet** (§2), an **agent framework**
 (§3). The exact rules: `erc-6551p.md`; every selector, event and error: `reference.md` (generated from the compiler).
